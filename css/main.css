@@ -1,22 +1,26 @@
 /** Header */
 .header {
-    border: 1px dotted blue;
+    border: 1px dotted red;
 }
 
 .container {
-    border: 1px dotted red;
+    border: 1px dotted blue;
     max-width: 96vw;
     margin: 0 auto;
+    padding: 0 8px;
+    box-sizing: border-box;   /**hace que los bordes queden internos al elemento*/
  }
 @media ( min-width: 568px) {
     .container {
         max-width: 540px;
+        padding: 0 16px;
     }
 }
 
 @media (min-width:768px) {
     .container {
         max-width: 720px;
+        padding: 0 24px;
     }
       
 }
@@ -24,6 +28,35 @@
 @media ( min-width:1024px) {
     .container {
         max-width: 992px;
+        padding: 0 32px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container { 
+        max-width: 1140px;
+        padding: 0 40px;
+    }
+}
+
+@media (min-width:1400px) {
+    .container {
+        max-width: 1320px;
+        padding: 0 48px; 
+    }
+}
+
+@media (min-width: 1600px) {
+    .container {
+        max-width: 1440px;
+        padding: 0 54px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .container {
+        max-width:1600px;
+        padding: 0 64px;
     }
 }
 
