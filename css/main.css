@@ -30,10 +30,18 @@ body {
 
 
 
+ul.menu-main {
+    
+    display: none
+;
+   
+}
 
-.header-container {
-    display: flex;
+.nav-navbar {
+    display: flex
+;
     justify-content: space-between;
+    align-items: center;
 }
 
 /** Main */
@@ -48,6 +56,15 @@ main {
     .container {
         max-width: 540px;
         padding: 0 16px;
+    } .menu-main {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 1rem;
+    }
+    .Hamburguer-menu {
+        display: none;
     }
 }
 
@@ -56,6 +73,14 @@ main {
         max-width: 720px;
         padding: 0 24px;
     }
+    ul.menu-main {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex
+;
+    gap: 1rem;
+}
       
 }
 
