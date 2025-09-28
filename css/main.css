@@ -5,7 +5,18 @@
     /** colores base*/;
   --Islamic-Green: #04B90B;
   --Slate-Gray: #777E90;
-}
+  --Charleston-Green: #23262F;
+  --Lotion: #FCFCFD;
+  --Bright-Gray: #E6E8EC;
+  --Cultured: #F4F5F6;
+  --Medium-Champagne: #F7E89D;
+  --Outer-Space: #2F363A;
+  --Chinese-White: #DDF3D8;
+  --Onyx: #353945;
+  --Black: #000000;
+  --Cadet-Blue: #B1B5C3;
+  --Chinese-Black: #141416;
+  }
 
 html {
     font-size: var(--over-font-size)
