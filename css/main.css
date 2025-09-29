@@ -1,21 +1,31 @@
 /**variables globales*/
 :root{
     /**convierte 1rem en base 10*/
-    --over-font-size: 62.5%
+    --over-font-size: 62.5%;
+    
     /** colores base*/;
-  --Islamic-Green: #04B90B;
-  --Slate-Gray: #777E90;
-  --Charleston-Green: #23262F;
-  --Lotion: #FCFCFD;
-  --Bright-Gray: #E6E8EC;
-  --Cultured: #F4F5F6;
-  --Medium-Champagne: #F7E89D;
-  --Outer-Space: #2F363A;
-  --Chinese-White: #DDF3D8;
-  --Onyx: #353945;
-  --Black: #000000;
-  --Cadet-Blue: #B1B5C3;
-  --Chinese-Black: #141416;
+    --chinese-black:#141416;
+    --slate-grey: #777e90;
+    --cadet-blue:#b1b5c3;
+    --bright-gray:#e6e8ec;
+    --cultured:#f5f6fa;
+    --lotion: #fcfcfd;
+
+    --islamic-green:-#04b90b;
+    --aero-blue:#d3f9d5;
+    --light-coral:#ea8484;
+    --lavender-blush:#fcf1f1;
+
+    --green-blue:#106aab;
+    --alice-blue:#f1f7fc;
+    --dark-pink:#f25178;
+    --misty-rose:#fce5e9;
+    --blue-violet:#8d31e9;
+    --magnolia:#f6eefd;
+    --gamboge:#da9f0a;
+    --cornsilk:#fcf6d8;
+    --light-sea-green:#26aca0;
+    --azure:#edfcfb;
   }
 
 html {
@@ -92,7 +102,7 @@ main {
 /** Footer */
 
 /** Media Queries (break point)*/
-@media (min-width: 568px) {
+@media (width > 568px) {
   .container {
     max-width: 54rem;
     padding: 0 1.6rem;
@@ -110,7 +120,7 @@ main {
   }
 }
 
-@media (min-width: 768px) {
+@media ( width > 768px) {
   .container {
     max-width: 72rem;
     padding: 0 2.4rem;
@@ -124,35 +134,35 @@ main {
   }
 }
 
-@media (min-width: 1024px) {
+@media (width > 1024px) {
   .container {
     max-width: 992px;
     padding: 0 32px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (width > 1200px) {
   .container {
     max-width: 99.2rem;
     padding: 0 4rem;
   }
 }
 
-@media (min-width: 1400px) {
+@media (width > 1400px) {
   .container {
     max-width: 132rem;
     padding: 0 4.8rem;
   }
 }
 
-@media (min-width: 1600px) {
+@media (width > 1600px) {
   .container {
     max-width: 144rem;
     padding: 0 5.4rem;
   }
 }
 
-@media (min-width: 1920px) {
+@media (width > 1920px) {
   .container {
     max-width: 160rem;
     padding: 0 6.4rem;
