@@ -30,6 +30,7 @@ body {
 body {
   display: flex;
   flex-direction: column;
+  font-size: 1.4rem;
 }
 
 h1 span {
@@ -45,7 +46,7 @@ h1 span {
   box-sizing: border-box; /**hace que los bordes queden internos al elemento*/
   margin: 0 auto; /**centra el elemento*/
   max-width: 96vw; /**ancho maximo*/
-  padding: 0 8px; /** Distancia entre el contenido y el borde */
+  padding: 0 .8rem; /** Distancia entre el contenido y el borde */
 }
 
 .container-fluid {
@@ -63,7 +64,7 @@ ul.menu-main {
 .nav-navbar {
   align-items: center;
   display: flex;
-  height: 44px;
+  height: 4.4rem;
   justify-content: space-between;
 }
 
@@ -90,11 +91,11 @@ main {
 }
 /** Footer */
 
-/** Media Queries */
+/** Media Queries (break point)*/
 @media (min-width: 568px) {
   .container {
-    max-width: 540px;
-    padding: 0 16px;
+    max-width: 54rem;
+    padding: 0 1.6rem;
   }
   .menu-main {
     display: flex;
@@ -111,8 +112,8 @@ main {
 
 @media (min-width: 768px) {
   .container {
-    max-width: 720px;
-    padding: 0 24px;
+    max-width: 72rem;
+    padding: 0 2.4rem;
   }
   ul.menu-main {
     display: flex;
@@ -132,28 +133,28 @@ main {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
-    padding: 0 40px;
+    max-width: 99.2rem;
+    padding: 0 4rem;
   }
 }
 
 @media (min-width: 1400px) {
   .container {
-    max-width: 1320px;
-    padding: 0 48px;
+    max-width: 132rem;
+    padding: 0 4.8rem;
   }
 }
 
 @media (min-width: 1600px) {
   .container {
-    max-width: 1440px;
-    padding: 0 54px;
+    max-width: 144rem;
+    padding: 0 5.4rem;
   }
 }
 
 @media (min-width: 1920px) {
   .container {
-    max-width: 1600px;
-    padding: 0 64px;
+    max-width: 160rem;
+    padding: 0 6.4rem;
   }
 }
