@@ -1,35 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+
 /**variables globales*/
-:root{
-    /**convierte 1rem en base 10*/
-    --over-font-size: 62.5%;
-    
-    /** colores base*/;
-    --chinese-black:#141416;
-    --slate-grey: #777e90;
-    --cadet-blue:#b1b5c3;
-    --bright-gray:#e6e8ec;
-    --cultured:#f5f6fa;
-    --lotion: #fcfcfd;
+:root {
+  /**convierte 1rem en base 10*/
+  --over-font-size: 62.5%;
 
-    --islamic-green:-#04b90b;
-    --aero-blue:#d3f9d5;
-    --light-coral:#ea8484;
-    --lavender-blush:#fcf1f1;
+  /** colores base*/
+  ;
+  --charleston-green: #23262F;
+  --chinese-black: #141416;
+  --slate-grey: #777e90;
+  --cadet-blue: #b1b5c3;
+  --bright-gray: #e6e8ec;
+  --cultured: #f5f6fa;
+  --lotion: #fcfcfd;
 
-    --green-blue:#106aab;
-    --alice-blue:#f1f7fc;
-    --dark-pink:#f25178;
-    --misty-rose:#fce5e9;
-    --blue-violet:#8d31e9;
-    --magnolia:#f6eefd;
-    --gamboge:#da9f0a;
-    --cornsilk:#fcf6d8;
-    --light-sea-green:#26aca0;
-    --azure:#edfcfb;
-  }
+  --islamic-green: #04b90b;
+  --aero-blue: #d3f9d5;
+  --light-coral: #ea8484;
+  --lavender-blush: #fcf1f1;
+
+  --green-blue: #106aab;
+  --alice-blue: #f1f7fc;
+  --dark-pink: #f25178;
+  --misty-rose: #fce5e9;
+  --blue-violet: #8d31e9;
+  --magnolia: #f6eefd;
+  --gamboge: #da9f0a;
+  --cornsilk: #fcf6d8;
+  --light-sea-green: #26aca0;
+  --azure: #edfcfb;
+}
 
 html {
-    font-size: var(--over-font-size)
+  font-size: var(--over-font-size)
 }
 
 html,
@@ -37,15 +41,25 @@ body {
   height: 100%;
   margin: 0;
 }
+
 body {
   display: flex;
   flex-direction: column;
   font-size: 1.4rem;
+  font-family: "Alice", serif;
+}
+
+
+h1,
+h2 {
+  color: var(--charleston-green);
+  font-size: 3.2rem;
 }
 
 h1 span {
-    color: var(--Islamic-Green);
+  color: var(--islamic-green);
 }
+
 /** Header */
 .header {
   border: 1px dotted red;
@@ -53,10 +67,14 @@ h1 span {
 
 .container {
   border: 1px dotted blue;
-  box-sizing: border-box; /**hace que los bordes queden internos al elemento*/
-  margin: 0 auto; /**centra el elemento*/
-  max-width: 96vw; /**ancho maximo*/
-  padding: 0 .8rem; /** Distancia entre el contenido y el borde */
+  box-sizing: border-box;
+  /**hace que los bordes queden internos al elemento*/
+  margin: 0 auto;
+  /**centra el elemento*/
+  max-width: 96vw;
+  /**ancho maximo*/
+  padding: 0 .8rem;
+  /** Distancia entre el contenido y el borde */
 }
 
 .container-fluid {
@@ -79,18 +97,24 @@ ul.menu-main {
 }
 
 .menu__link {
-    color: var(--Slate-Gray);
-    text-decoration: none;
+  color: var(--Slate-Gray);
+  text-decoration: none;
 }
+
+.active {
+  color: var(--islamic-green);
+}
+
 .btn {
-    padding: .5rem;
-    border-radius: .2rem;
+  padding: .5rem 1rem;
+  border-radius: .2rem;
 }
-.btn--light-green{
-     
-    background-color: var(--Islamic-Green);
-    color: #FFFFFF;
-    text-transform: uppercase;
+
+.btn--light-green {
+
+  background-color: var(--islamic-green);
+  color: #FFFFFF;
+  text-transform: uppercase;
 }
 
 
@@ -99,7 +123,38 @@ main {
   /* display: block; */
   flex-grow: 1;
 }
+
 /** Footer */
+
+.widget {
+  margin: 4rem 0;
+}
+
+.widget-left {
+  text-align: center;
+}
+
+details {
+  border: 1px solid #aaaaaa;
+  border-radius: 4px;
+  padding: 0.5em 0.5em 0;
+}
+
+summary {
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+}
+
+details[open] {
+  padding: 0.5em;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #aaaaaa;
+  margin-bottom: 0.5em;
+}
+
 
 /** Media Queries (break point)*/
 @media (width > 568px) {
@@ -107,6 +162,7 @@ main {
     max-width: 54rem;
     padding: 0 1.6rem;
   }
+
   .menu-main {
     display: flex;
     gap: .5rem;
@@ -114,17 +170,35 @@ main {
     margin: 0;
     padding: 0;
   }
-
-  .hamburguer-menu {
-    display: none;
-  }
 }
 
-@media ( width > 768px) {
+@media (width > 768px) {
   .container {
     max-width: 72rem;
     padding: 0 2.4rem;
   }
+
+  .hamburguer-menu {
+    display: none;
+  }
+
+  .footer-container {
+    display: flex;
+    gap: 4rem;
+  }
+
+  .widget-left {
+    flex-basis: 40%;
+  }
+
+  .widget-right {
+    /** flex-basis: auto; */
+    /*  flex-grow: 1; */
+    flex: auto;
+    /* flex: <flex-grow> */
+  }
+
+
   ul.menu-main {
     display: flex;
     gap: 1rem;
